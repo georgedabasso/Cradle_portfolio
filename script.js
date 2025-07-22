@@ -2,13 +2,14 @@
 
 console.log("Reveal script loaded!");
 document.addEventListener("DOMContentLoaded", function (){
-    const menuToggle = document.getElementById("menu-toggle");
+    const toggle = document.getElementById("menu-toggle");
+    const navbar = document.getElementById("navbar");
 
-    menuToggle. addEventListener ("click", function(){
-        navbar.classList.toggle("show")
-    })
+    toggle. addEventListener ("click", () => {
+        navbar.classList.toggle("show");
+    });
 
-})
+});
 
 document.addEventListener("DOMContentLoaded", function (){
     const stakeholders= document.querySelectorAll('.stakeholder');

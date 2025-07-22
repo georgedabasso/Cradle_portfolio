@@ -7,6 +7,7 @@
 }
 
 body {
+  padding-top: 80px ;
   line-height: 1.6;
   
   color: white;
@@ -17,12 +18,22 @@ body {
 header {
     background-color: #003366;
     color: #fff;
-    padding: 1rem;
+    padding: 20px 40px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 
+}
+
+main {
+    padding-top: 80px;
 }
 
 
@@ -60,7 +71,11 @@ nav a:hover {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px){
+    .menu-toggle {
+        display: block;
+    }
+
     nav {
         display: none;
         flex-direction: column;
@@ -94,7 +109,7 @@ nav a:hover {
 }
 .hero h1 {
     font-size: 36px;
-    color: #333;
+    color: white;
     margin-bottom: 20px;
 }
 
@@ -271,7 +286,7 @@ nav a:hover {
 .about-overview p,
 .about-section p {
     font-size: 1rem;
-    color: #4a5568;
+    color: white;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -279,17 +294,19 @@ nav a:hover {
     list-style: none;
     padding: 0;
     margin: 20px 0;
+    color: white;
 }
 
 .core-values-section ul li {
     margin: 10px 0;
     font-size: 1.1rem;
+    color: white;
 }
 
 .core-values {
     list-style-type: none;
     padding: 0;
-    color: #4a5568;
+    color: white;
     align-items: center;
     margin: 0 auto;
     display: flex;
@@ -299,7 +316,7 @@ nav a:hover {
 .core-values li{
     margin-bottom: 0.5rem;
     font-size: 1rem;
-    color: #4a5568;
+    color: white;
 }
 
 .about-buttons {
@@ -558,7 +575,7 @@ footer{
 }
 
 .logo-img{
-    height: 100px;
+    height: 70px;
     width: 100px;
 
 }
@@ -591,4 +608,111 @@ footer{
     opacity: 1;
     transform: translateY(0);
     animation: fadeInUp 0.8s fowards;
+}
+
+.button-wrapper a {
+    padding: 12px 24px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, 
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px auto;
+}
+
+.button-wrapper-hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+body.home-bg{
+    background-image: url('3rd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+}
+
+body.home-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+body.about-bg{
+    background-image: url('4th.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+}
+
+body.about-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+body.service-bg{
+    background-image: url('3rd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+}
+
+body.service-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
+}
+
+
+body.contact-bg{
+    background-image: url('3rd.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+    color: white;
+}
+
+body.contact-bg::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: -1;
 }
