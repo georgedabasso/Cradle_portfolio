@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StraTek Digital | Contact Us </title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        reveals. forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("visible")
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+})
+</script>
+<body>
+    <header>
+        <div class="logo reveal">StraTek Digital</div>
+        <div class="menu-toggle reveal" id="menu-toggle">&#9776;</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="contact reveal">
+        <section>
+            <h1 style="color:black;" class="reveal">Contact Us</h1>
+            <p style="color:black;"class="reveal">Get in touch for consultation, partnerships, or just to say hello!</p>
+            <form action="https://formsubmit.co/guyodabasso01@gmail.com" method="POST" class="contact-form reveal">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank you.html">
+                <input type="text" name="name" placeholder="Your Name" required/>
+                <input type="email" name="email" placeholder="Your Email" required/>
+                <textarea name="message" placeholder="Your Message" rows="5" requires></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 StraTek Digital. All Rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

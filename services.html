@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StraTek Digital | Our Services</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        reveals. forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("visible")
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+})
+</script>
+<body>
+    <header>
+        <div class="logo">StraTek Digital</div>
+        <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    
+    <main class="services">
+        <section class="service-box">
+            <h1 style="color:black;" class="reveal">Our Services</h1>
+            <div class="services-list reveal ">
+                <div class="service reveal">
+                    <img src="web development.jpg" alt="Website Designing"/>
+                    <h2 class="reveal">Website Development</h2>
+                    <p class="reveal">At <strong>StraTek Digital </strong> , we specialize in building powerful, responsive,
+                         and user-friendly websites that reflect your brand's identity and drive real results.
+                         Our development process combines elegant design, modern technologies, and strategic thinking to give your business a strong digital presence.
+                     </p>
+
+                     <h3 class="reveal">What We Offer</h3>
+                     <ul class="service-list reveal">
+                        <li>&#9989 <strong>Custom Website Design</strong> Tailored layouts that align wth your brand and goals.</li>
+                        <li>&#9989 <strong>Responsive Development</strong> Optimized for desktops,tablets and smartphones.</li>
+                        <li>&#9989 <strong>E-commerce Platforms</strong> Secure, user-friendly online stores with integrated payments.</li>
+                        <li>&#9989 <strong>Portfolio & Business Sites</strong> Showcase your services and build credibility online</li>
+                        <li>&#9989 <strong>Ongoing Maintenance</strong> Updates, security patches, and content support.</li>
+
+                     </ul>
+
+                     
+                </div>
+                <div class="service reveal">
+                    <img src="mobile app.jpg" alt="App Development"/>
+                    <h2 class="reveal">Web & Mobile App Development</h2>
+                    <p class="reveal">We build interactive, scalable, and secure web and mobile applications that solve real-world problems.
+                        Whether you need an Android App, a cross-platform solution, or a robust web platform, StraTek Digital has 
+                        the expertise to turn your idea into a fully functional digital product.
+                    </p>
+
+                    <h3 class="reveal">What We Offer</h3>
+                    <ul class="service-list reveal">
+                        <li>&#9989 <strong>Custom Web Apps</strong> Make platforms built with modern frameworks like React</li>
+                        <li>&#9989 <strong>Mobile App Development</strong> Android apps, Flutter apps, and progressive web apps</li>
+                        <li>&#9989 <strong>Cross-Platform Solutions</strong> One codebase, multiple platforms (web + mobile)</li>
+                        <li>&#9989 <strong>Database Integration</strong> Real-time data, cloud storage, and user authentication.</li>
+                        
+                    </ul>
+                </div>
+                <div class="service reveal">
+                    <img src="bs plan.jpg" alt="Business Planning"/>
+                    <h2 class="reveal">Business Planning</h2>
+                    <p class="reveal">StraTek Digital supports, entreprenuers, and organizations in developing solid business strategies.
+                        Our business planning service provide clarity, structure, and insights to help your venture grow sustainability
+                        and profitably.
+                    </p>
+
+                    <h3 class="reveal">What We Offer</h3>
+                    <ul class="service-list reveal">
+                        <li>&#9989 <strong>Business Plan Writing</strong> Professonal and investor-ready business plans.</li>
+                        <li>&#9989 <strong>Feasibility Studies</strong> Assessing market, technical, and financial viability</li>
+                        <li>&#9989 <strong>Market Research</strong> Data-driven insights to guide your decisions</li>
+                        <li>&#9989 <strong>Strategic Growth Planning</strong> Roadmaps for long-term sucess</li>
+                    </ul>
+                </div>
+                <div class="service reveal">
+                    <img src="event.jpg" alt="Event Planning"/>
+                    <h2 class="reveal">Event Planning</h2>
+                    <p class="reveal">From concept to execution, StraTek Digital plans and manages professional, impactful, and memorable events tailored to your objectives.
+                        Whether it's a corporate seminar, workshops, community outreach, weddings, parties or a branding activation,
+                        we ensure flawless coordination and delivery from start to finish.
+                    </p>
+
+                    <h3 class="reveal">What We Offer</h3>
+                    <ul class="service-list reveal">
+                        <li>&#9989 <strong>Event Conceptualization</strong> Unique ideas aligned with your theme and audience</li>
+                        <li>&#9989 <strong>Venue & Vendor Coordination</strong> Full logistics including booking, permits, and vendor handling.</li>
+                        <li>&#9989 <strong>Master of Ceremony (MC) services</strong>Professional and engagin MCs to keep the event flowing.</li>
+                        <li>&#9989 <strong>Decorations & Setup</strong> Thematic decorations and creative ambiance setups.</li>
+                        <li>&#9989 <strong>Photography & Videography</strong> Capturing key moments with professional media coverage.</li>
+                        <li>&#9989 <strong>Sound Systems & Lighting</strong> Clear audio, quality microphones, speakers, and lighting setups</li>
+                        <li>&#9989 <strong>Travelling & Tours Coordination</strong> Planning, booking, and organizing group trips and corporate tours.</li>
+                        <li>&#9989 <strong>Digital Promotions</strong> Online marketing to attract and engage your audience before te event.</li>
+                        <li>&#9989 <strong>On-site Management</strong> Real-time coordination and live troubleshooting during the event.</li>
+                        <li>&#9989 <strong>Post-event Reporting</strong> Collecting feedback, analyzing outcomes, and documenting highlights.</li>
+
+                    </ul>
+                </div>
+                <div class="service reveal">
+                    <img src="tech alt.jpg" alt="Tech Education"/>
+                    <h2 class="reveal">Tech Education</h2>
+                    <p class="reveal">StraTek Digital is committed to empowering individuals and communities with practical and foundational digital skills.
+                        We offer beginner-friendly and progressive training programs in technology to prepare learners for the digital economy.
+                    </p>
+
+                    <h3 class="revveal">What We Offer</h3>
+                    <ul class="service-list reveal">
+                        <li>&#9989 <strong>Basic Computer Skills</strong> Introduction to computer use, typing, file management and internet basics</li>
+                        <li>&#9989 <strong>Coding for Beginners</strong> Hands-on learning of HTML, CSS, Javascript, and python from scratch</li>
+                        <li>&#9989 <strong>AI literacy Workshops</strong> Understand how artificial intelligence works and its real-world application</li>
+                        <li>&#9989 <strong>Mobile App Development</strong> Build simple Android apps with user-friendly tools and guidance</li>
+                        <li>&#9989 <strong>Digital Literacy for Youth</strong> Engaging, age-appropriate training for students and youth adults.</li>
+                        <li>&#9989 <strong>Women in Tech Initiative</strong> Special programs encouraging women to participate in technology.</li>
+                        <li>&#9989 <strong>Practical ICT Workshops</strong> In-person or virtual sessions on tools like Microsoft Office, Canva and email.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="service-box why-stratek reveal">
+            <div class="container reveal">
+                <h2 class="reveal">Why Choose StraTek Digital?</h2>
+                <p class="reveal">
+                    At StraTek digital, we combine technoloy, strategy, creativity, and expertise to deliver exceptional value.
+                    Whether you're seeking a digital solution,planning a strategic event, or empowering your team with tech skills,
+                     we're here to support your vision with precision and professionalism.
+                </p>
+
+                <ul class="service-benefits reveal">
+                    <li>&#10004 Highly skilled and certified professionals</li>
+                    <li>&#10004 A wide range of services under one roof</li>
+                    <li>&#10004 Cusomized solutions to meet unique client needs</li>
+                    <li>&#10004 Hands-on, practical and project-based training</li>
+                    <li>&#10004 Reliable and timely service delivery</li>
+                    <li>&#10004 Affordable packages and flexible engagement models</li>
+                    <li>&#10004 Friendly customer support and follow up</li>
+                    <li>&#10004 Strong understanding of both tech and business landscapes</li>
+                    <li>&#10004 Moderrn tools and platforms for high-quality outcomes</li>
+                </ul>
+
+                <div class="contact-btn-wrapper reveal">
+                    <a href="contact.html" class="contact-btn">Contact Us</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; 2025 StraTek Digital. All Rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

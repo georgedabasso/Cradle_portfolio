@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StraTek Digital | About Us</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const reveals = document.querySelectorAll(".reveal");
+
+    function revealOnScroll() {
+        const windowHeight = window.innerHeight;
+        reveals. forEach((el) => {
+            const elementTop = el.getBoundingClientRect().top;
+            if (elementTop < windowHeight - 100) {
+                el.classList.add("visible")
+            }
+        });
+    }
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+})
+</script>
+<body>
+    <header>
+        <div class="logo reveal">StraTek Digital</div>
+        <div class="menu-toggle reveal" id="menu-toggle">&#9776</div>
+        <nav id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="services.html">Our Services</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+    </header>
+
+    <main class="about reveal">
+        <section class="about-intro reveal">
+            <h1 style="color:black;" class="reveal">StraTek Digital</h1>
+            <p style="color:black;" class="reveal">StraTek Digital is a forward-thinking Tech company offering innovative digital solutions and planning services</p>
+        </section>
+
+        <section class="about-overview reveal">
+            <div class="container animated-bg">
+                <h2 class="reveal">Our Mission</h2>
+                <p class="reveal">
+                    To empower individuals and organizations through innovative digital solutions, capacity building, and strategic planning that drive sustainable growth and impact. 
+                </p>
+
+                <h2 class="reveal">Our Vision</h2>
+                <p class="reveal">
+                    To be a leading tech-driven company in Africa transforming ideas into reality and fostering a digital-first future.
+                </p>
+
+                <h2 class="reveal">Core Values</h2>
+                <ul class="core-values reveal">
+                    <li>&#9989 Innovation</li>
+                    <li>&#9989 Integrity</li>
+                    <li>&#9989 Excellence</li>
+                    <li>&#9989 Collaboration</li>
+                    <li>&#9989 Sustainability</li>
+                    <li>&#9989 Client-Centered Approach</li>
+                </ul>
+
+            </div>
+
+        </section>
+
+        <section class="company-story">
+            <div class="container">
+                <h2 style="color:black;"class="section-heading">Our Story</h2>
+                <p style="color:black;" >StraTek Digital was founded to bridge the digital divide in Africa by offering comprehensive tech solutuions.
+                    Our journey began with a small but dedicated team passionate about technology and impact. Today, we empower businesses,
+                    organize successful events and nurure digital skils through training and innovation. StraTek Digital was founded by William Wario and George Guyo,
+                    our journey began with a desire to help businesses and individuals navigate the digital age with confidence. With backgrounds in computer science,
+                    software development and education, we combined our skills to offerholistic solutions in web and mobile development,business consultancy and event management.
+                </p>
+            </div>
+        </section>
+
+        <section class="stakeholders ">
+            <h2  class="reveal">Meet Our Stakeholders</h2>
+            <div class="stakeholder-cards reveal">
+                 <div class="stakeholder reveal">
+                    <img src="wario image.jpg" alt="William Wario Dabasso"/>
+                    <h3 class="reveal">WILLIAM WARIO DABASSO</h3>
+                    <p class="reveal">Wario is a dedicated educationist, blending academic excellence with digital innovaton to inspire and empower learners and professionals alike.
+                        Wario has a solid background in ICT and Physics Education. He is the founder of StraTek Digital, a forward-thinking tech company specializing in web design,
+                        mobile app development, event planning, and tech education. As an experienced ICT consultant, he offers expert guidance on integrating technology into learning 
+                        environments and business operations. His passion for human development also shines through his work as a Leadership and Business Development Coach,
+                        where he mentors aspiring entrepreneurs and young leaders in navigating the digital economy.  </p>
+                </div>
+                <div class="stakeholder reveal">
+                    <img src="guyo image.jpg" alt="George Guyo Dabasso"/>
+                    <h3 class="reveal">GEORGE GUYO DABASSO</h3>
+                    <p class=" reveal"> Guyo is a driven computer scientist with a strong passion for technology, innovation, and sustainability. He is a certified software developer skilled
+                        in front-end and back-end web development using technologies like HTML,CSS,JavaScript,js. He also builds mobile applications using Java, Kotlin and manages databases with MySQL and Firebase.
+                        With experience in Git & GitHub, API integration and responsive design. George brings full-stack development expertise to every project. His passion for innovation,sustainability and digital 
+                        empowerment drives his commitment to creating impactful tech solutions. George is the co-founder of StraTek Digital, a tech company offering services in web design, mobile app development, business planning,
+                        and tech education. </p>
+
+                </div>
+               
+            </div>
+        </section>
+
+        <section class="why-stratek">
+            <div class="container">
+                <h2 class="section-heading">Why Choose StraTek Digital?</h2>
+                <p>We combine creativity,innovation, and a customer-first approach to deliver tailored tech and business solutions.
+                    Our team thrives on excellence, collaboration, and results-driven strategies. Whether you're a business owner
+                    or a student of technology, we are your go-to digital partner.
+                </p>
+            </div>
+
+            <div class="about-buttons">
+                <a href="services.html" class="btn-services">Explore Our Services</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 StraTek Digital. All Rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
