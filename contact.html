@@ -55,11 +55,15 @@
         <section>
             <h1 style="color:black;" class="reveal">Contact Us</h1>
             <p style="color:black;"class="reveal">Get in touch for consultation, partnerships, or just to say hello!</p>
-            <form action="https://formsubmit.co/guyodabasso01@gmail.com" method="POST" class="contact-form reveal">
+            <form action="https://formsubmit.co/guyodabasso01@gmail.com" method="POST" target="_blank" class="contact-form reveal">
                 <input type="hidden" name="_next" value="http://127.0.0.1:5500/thank you.html">
                 <input type="text" name="name" placeholder="Your Name" required/>
                 <input type="email" name="email" placeholder="Your Email" required/>
                 <textarea name="message" placeholder="Your Message" rows="5" requires></textarea>
+
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_next" value="https://georgedabasso.github.io/Cradle_portfolio/thank you.html">
+                
                 <button type="submit">Send Message</button>
             </form>
         </section>
